@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/account"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/book"
+            android:title="Valentine's History" />
+        <item
+            android:id="@+id/nav_week"
+            android:icon="@drawable/heart"
+            android:title="Valentine's Week" />
+        <item
+            android:id="@+id/nav_idea"
+            android:icon="@drawable/date"
+            android:title="Dating Ideas" />
+
+        <item
+            android:id="@+id/nav_meter"
+            android:icon="@drawable/cal"
+            android:title="Love Calculator" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/star"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/power"
+                android:title="LogOut" />
+        </menu>
+    </item>
+
+</menu>
