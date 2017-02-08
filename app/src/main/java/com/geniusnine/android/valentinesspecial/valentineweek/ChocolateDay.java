@@ -1,12 +1,20 @@
 package com.geniusnine.android.valentinesspecial.valentineweek;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.geniusnine.android.valentinesspecial.ChocolateDay.ChocolateDayShayari;
+import com.geniusnine.android.valentinesspecial.ChocolateDay.ChocolateDaySmsAndQuotes;
+import com.geniusnine.android.valentinesspecial.ChocolateDay.ChocolateDayStatus;
+import com.geniusnine.android.valentinesspecial.ChocolateDay.ChocolateDayWishes;
 import com.geniusnine.android.valentinesspecial.R;
+import com.geniusnine.android.valentinesspecial.ChocolateDay.ChocolatedayPoems;
 import com.geniusnine.android.valentinesspecial.valentinequtos.CustomList;
 
 public class ChocolateDay extends AppCompatActivity {
@@ -14,7 +22,7 @@ public class ChocolateDay extends AppCompatActivity {
     String[] web = {
             "Status",
             "Shayari",
-            "Dress Up",
+            "Sms & Quotes",
             "Poems",
             "Wishes"
 
@@ -34,6 +42,32 @@ public class ChocolateDay extends AppCompatActivity {
         CustomList adapter = new CustomList(ChocolateDay.this, web, imageId);
         list=(ListView)findViewById(R.id.chocolate);
         list.setAdapter(adapter);
+
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                 if(position == 0){
+                     startActivity(new Intent(ChocolateDay.this, ChocolateDayStatus.class));
+                 }
+
+                if(position == 1){
+                    startActivity(new Intent(ChocolateDay.this, ChocolateDayShayari.class));
+                }
+                if(position == 2){
+                    startActivity(new Intent(ChocolateDay.this, ChocolateDaySmsAndQuotes.class));
+                }
+                if(position == 3){
+                    startActivity(new Intent(ChocolateDay.this, ChocolatedayPoems.class));
+                }
+                if(position == 4){
+                    startActivity(new Intent(ChocolateDay.this, ChocolateDayWishes.class));
+                }
+
+            }
+        });
+
+
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }

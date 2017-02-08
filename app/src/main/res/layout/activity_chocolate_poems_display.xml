@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chocolate_poems_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/chocolateback"
+    android:layout_weight="1"
+    tools:context="com.geniusnine.android.valentinesspecial.ChocolateDay.ChocolatePoemsDisplay">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
