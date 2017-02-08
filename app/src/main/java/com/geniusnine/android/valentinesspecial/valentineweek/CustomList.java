@@ -1,4 +1,4 @@
-package com.geniusnine.android.valentinesspecial.valentinequtos;
+package com.geniusnine.android.valentinesspecial.valentineweek;
 
 import android.app.Activity;
 import android.view.LayoutInflater;

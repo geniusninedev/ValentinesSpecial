@@ -23,7 +23,7 @@ public class ValentineMeter extends AppCompatActivity {
         final TextView res = (TextView) findViewById(R.id.resview);
         final EditText name = (EditText) findViewById(R.id.nameField);
         final EditText cname = (EditText) findViewById(R.id.crushnameField);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,7 +53,6 @@ public class ValentineMeter extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -62,10 +61,17 @@ public class ValentineMeter extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
 
-        return super.onOptionsItemSelected(item);
+        switch (item.getItemId()) {
+            case android.R.id.home:
+
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+
+                return super.onOptionsItemSelected(item);
+
+        }
     }
 }

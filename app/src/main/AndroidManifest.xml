@@ -27,7 +27,38 @@
         <activity android:name=".valentineweek.HugDay" />
         <activity android:name=".valentineweek.KissDay" />
         <activity android:name=".valentineweek.ValentineDay" />
-        <activity android:name=".ValentineMeter"></activity>
+        <activity
+            android:name=".ValentineMeter"
+            android:label="Love Meter" />
+        <activity
+            android:name=".ValentineSpecial.RoseDayShayari"
+            android:label="Rose Day Shayari" />
+        <activity
+            android:name=".ValentineSpecial.RoseDayShayariQuotos"
+            android:label="Rose Day Shayari" />
+        <activity
+            android:name=".ValentineSpecial.RoseDayStatus"
+            android:label="Rose Day Status" />
+        <activity
+            android:name=".ValentineSpecial.RoseStatusQuotos"
+            android:label="Rose Day Status" />
+        <activity
+            android:name=".ValentineSpecial.RoseDayWishes"
+            android:label="Rose Day Wishesh" />
+        <activity
+            android:name=".ValentineSpecial.RoseDayWishesQuotos"
+            android:label="Rose Day Wishesh" />
+        <activity
+            android:name=".ValentineSpecial.RoseDayPoem"
+            android:label="Rose Day Poem" />
+        <activity
+            android:name=".ValentineSpecial.RosePoem"
+            android:label="Rose Day Poem" />
+        <activity android:name=".ProposeDay.ProposeDayStatus"
+            android:label="Propose Day Status"></activity>
+
+       <activity android:name=".ProposeDay.ProposeDayStatusQuotos"
+           android:label="Propose Day Status"/>
     </application>
 
 </manifest>
