@@ -1,13 +1,20 @@
 package com.geniusnine.android.valentinesspecial.valentineweek;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.geniusnine.android.valentinesspecial.R;
-import com.geniusnine.android.valentinesspecial.valentinequtos.CustomList;
+import com.geniusnine.android.valentinesspecial.ValentineSpecial.RoseDayDressup;
+import com.geniusnine.android.valentinesspecial.ValentineSpecial.RoseDayPoem;
+import com.geniusnine.android.valentinesspecial.ValentineSpecial.RoseDayShayari;
+import com.geniusnine.android.valentinesspecial.ValentineSpecial.RoseDayStatus;
+import com.geniusnine.android.valentinesspecial.ValentineSpecial.RoseDayWishes;
 
 public class RoseDay extends AppCompatActivity {
     ListView list;
@@ -36,6 +43,36 @@ public class RoseDay extends AppCompatActivity {
         list.setAdapter(adapter);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position== 0)
+                {
+                    startActivity(new Intent(RoseDay.this,RoseDayStatus.class));
+                }
+                if(position== 1)
+                {
+                    startActivity(new Intent(RoseDay.this,RoseDayShayari.class));
+                }
+
+
+                if(position== 2)
+                {
+                    startActivity(new Intent(RoseDay.this,RoseDayDressup.class));
+                }
+                if(position== 3)
+                {
+                    startActivity(new Intent(RoseDay.this,RoseDayPoem.class));
+                }
+                if(position== 4)
+                {
+                    startActivity(new Intent(RoseDay.this,RoseDayWishes.class));
+                }
+            }
+
+
+        });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -7,7 +7,6 @@ import android.view.MenuItem;
 import android.widget.ListView;
 
 import com.geniusnine.android.valentinesspecial.R;
-import com.geniusnine.android.valentinesspecial.valentinequtos.CustomList;
 
 public class ValentineDay extends AppCompatActivity {
 

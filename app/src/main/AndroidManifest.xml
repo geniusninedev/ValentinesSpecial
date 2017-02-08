@@ -27,27 +27,7 @@
         <activity android:name=".valentineweek.HugDay" />
         <activity android:name=".valentineweek.KissDay" />
         <activity android:name=".valentineweek.ValentineDay" />
-        <activity android:name=".ValentineMeter" />
-        <activity android:name=".ChocolateDay.ChocolatedayPoems" />
-        <activity android:name=".ChocolateDay.ChocolatePoemsDisplay" />
-        <activity android:name=".ChocolateDay.ChocolateDayStatus" />
-        <activity android:name=".ChocolateDay.ChocolateStatusDisplay" />
-        <activity android:name=".ChocolateDay.ChocolateDayShayari" />
-        <activity android:name=".ChocolateDay.ChocolateShayariDisplay" />
-        <activity android:name=".ChocolateDay.ChocolateDayWishes" />
-        <activity android:name=".ChocolateDay.ChocolateWishesDisplay" />
-        <activity android:name=".TeddyDay.TeddyDayPoems" />
-        <activity android:name=".TeddyDay.TeddyPoemsDisplay" />
-        <activity android:name=".TeddyDay.TeddyDaySmsAndQuotes" />
-        <activity android:name=".TeddyDay.TeddySmsDisplay" />
-        <activity android:name=".TeddyDay.TeddyDayShayari" />
-        <activity android:name=".TeddyDay.TeddyShayariDisplay" />
-        <activity android:name=".TeddyDay.TeddyStatusDisplay" />
-        <activity android:name=".TeddyDay.TeddyDayStatus" />
-        <activity android:name=".TeddyDay.TeddyDayWishes" />
-        <activity android:name=".TeddyDay.TeddyWishesDisplay" />
-        <activity android:name=".ChocolateDay.ChocolateDaySmsAndQuotes"></activity>
-        <activity android:name=".ChocolateDay.ChocolateSmsDisplay"></activity>
+        <activity android:name=".ValentineMeter"></activity>
     </application>
 
 </manifest>

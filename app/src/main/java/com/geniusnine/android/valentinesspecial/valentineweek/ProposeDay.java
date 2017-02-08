@@ -1,13 +1,20 @@
 package com.geniusnine.android.valentinesspecial.valentineweek;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.geniusnine.android.valentinesspecial.ProposeDay.ProposeDayDressup;
+import com.geniusnine.android.valentinesspecial.ProposeDay.ProposeDayPoem;
+import com.geniusnine.android.valentinesspecial.ProposeDay.ProposeDayShayari;
+import com.geniusnine.android.valentinesspecial.ProposeDay.ProposeDayStatus;
+import com.geniusnine.android.valentinesspecial.ProposeDay.ProposeDayWishes;
 import com.geniusnine.android.valentinesspecial.R;
-import com.geniusnine.android.valentinesspecial.valentinequtos.CustomList;
 
 public class ProposeDay extends AppCompatActivity {
 
@@ -37,7 +44,38 @@ public class ProposeDay extends AppCompatActivity {
         list.setAdapter(adapter);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position== 0)
+                {
+                    startActivity(new Intent(ProposeDay.this,ProposeDayStatus.class));
+                }
+                if(position== 1)
+                {
+                    startActivity(new Intent(ProposeDay.this,ProposeDayShayari.class));
+                }
+
+
+                if(position== 2)
+                {
+                    startActivity(new Intent(ProposeDay.this,ProposeDayDressup.class));
+                }
+                if(position== 3)
+                {
+                    startActivity(new Intent(ProposeDay.this,ProposeDayPoem.class));
+                }
+                if(position== 4)
+                {
+                    startActivity(new Intent(ProposeDay.this,ProposeDayWishes.class));
+                }
+            }
+
+
+        });
+            }
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
