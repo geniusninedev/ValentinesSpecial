@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.geniusnine.android.valentinesspecial.ChocolateDay.ViewPagerAdapter;
 import com.geniusnine.android.valentinesspecial.R;
 
 /**

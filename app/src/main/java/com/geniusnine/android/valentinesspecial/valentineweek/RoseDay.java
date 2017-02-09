@@ -10,9 +10,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.geniusnine.android.valentinesspecial.R;
-import com.geniusnine.android.valentinesspecial.ValentineSpecial.RoseDayDressup;
 import com.geniusnine.android.valentinesspecial.ValentineSpecial.RoseDayPoem;
 import com.geniusnine.android.valentinesspecial.ValentineSpecial.RoseDayShayari;
+import com.geniusnine.android.valentinesspecial.ValentineSpecial.RoseDaySmsandQuote;
 import com.geniusnine.android.valentinesspecial.ValentineSpecial.RoseDayStatus;
 import com.geniusnine.android.valentinesspecial.ValentineSpecial.RoseDayWishes;
 
@@ -21,7 +21,7 @@ public class RoseDay extends AppCompatActivity {
     String[] web = {
             "Status",
             "Shayari",
-            "Dress Up",
+            "Sms & Quotes",
             "Poems",
             "Wishes"
 
@@ -59,7 +59,7 @@ public class RoseDay extends AppCompatActivity {
 
                 if(position== 2)
                 {
-                    startActivity(new Intent(RoseDay.this,RoseDayDressup.class));
+                    startActivity(new Intent(RoseDay.this,RoseDaySmsandQuote.class));
                 }
                 if(position== 3)
                 {

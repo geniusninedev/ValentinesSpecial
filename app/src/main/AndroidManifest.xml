@@ -19,15 +19,134 @@
             </intent-filter>
         </activity>
         <activity android:name=".valentineweek.ValentineWeek" />
-        <activity android:name=".valentineweek.RoseDay" />
-        <activity android:name=".valentineweek.ProposeDay" />
-        <activity android:name=".valentineweek.ChocolateDay" />
-        <activity android:name=".valentineweek.TeddyDay" />
-        <activity android:name=".valentineweek.PromiseDay" />
-        <activity android:name=".valentineweek.HugDay" />
-        <activity android:name=".valentineweek.KissDay" />
-        <activity android:name=".valentineweek.ValentineDay" />
-        <activity android:name=".ValentineMeter"></activity>
+        <activity android:name=".valentineweek.RoseDay"
+            android:label="Rose Day "/>
+        <activity android:name=".valentineweek.ProposeDay"
+            android:label="Propose Day "/>
+        <activity android:name=".valentineweek.ChocolateDay"
+            android:label="Chocolate Day "/>
+        <activity android:name=".valentineweek.TeddyDay"
+            android:label="Teddy Day "/>
+        <activity android:name=".valentineweek.PromiseDay"
+            android:label="Promise Day "/>
+        <activity android:name=".valentineweek.HugDay"
+            android:label="Hug Day "/>
+        <activity android:name=".valentineweek.KissDay"
+            android:label="Kiss Day "/>
+        <activity android:name=".valentineweek.ValentineDay"
+            android:label="Valentines Day "/>
+
+
+        <activity
+            android:name=".ValentineMeter"
+            android:label="Love Meter" />
+        <activity
+            android:name=".ValentineSpecial.RoseDayShayari"
+            android:label="Rose Day Shayari" />
+        <activity
+            android:name=".ValentineSpecial.RoseDayShayariQuotos"
+            android:label="Rose Day Shayari" />
+        <activity
+            android:name=".ValentineSpecial.RoseDayStatus"
+            android:label="Rose Day Status" />
+        <activity
+            android:name=".ValentineSpecial.RoseStatusQuotos"
+            android:label="Rose Day Status" />
+        <activity
+            android:name=".ValentineSpecial.RoseDayWishes"
+            android:label="Rose Day Wishesh" />
+        <activity
+            android:name=".ValentineSpecial.RoseDayWishesQuotos"
+            android:label="Rose Day Wishesh" />
+        <activity
+            android:name=".ValentineSpecial.RoseDayPoem"
+            android:label="Rose Day Poem" />
+        <activity
+            android:name=".ValentineSpecial.RosePoem"
+            android:label="Rose Day Poem" />
+
+        <activity android:name=".ValentineSpecial.RoseDaySmsandQuote"
+         android:label="Rose Day Sms"></activity>
+
+        <activity android:name=".ValentineSpecial.RoseSmsQuotosDisplay"
+            android:label="Rose Day Sms"></activity>
+
+        <activity android:name=".ProposeDay.ProposeDayStatus"
+            android:label="Propose Day Status"></activity>
+
+        <activity android:name=".ProposeDay.ProposeDayStatusQuotos"
+            android:label="Propose Day Status"/>
+
+        <activity android:name=".ProposeDay.ProposeDayShayariQuotos"
+            android:label="Propose Day Shayari"></activity>
+
+        <activity android:name=".ProposeDay.ProposeDayShayari"
+            android:label="Propose Day Shayari"/>
+
+        <activity android:name=".ProposeDay.ProposeDaySmsandQuotes"
+            android:label="Propose Day Sms"></activity>
+
+        <activity android:name=".ProposeDay.ProposeDaySmsQuotos"
+            android:label="Propose Day Sms"></activity>
+
+        <activity android:name=".ProposeDay.ProposeDayPoem"
+            android:label="Propose Day Poem"></activity>
+
+        <activity android:name=".ProposeDay.ProposeDayPoemDisplay"
+            android:label="Propose Day Poem"></activity>
+
+        <activity android:name=".ProposeDay.ProposeDayWishes"
+            android:label="Propose Day Wishes"></activity>
+
+        <activity android:name=".ProposeDay.ProposeDayWishesDisplay"
+            android:label="Propose Day Wishes"></activity>
+        
+
+        <activity android:name=".ChocolateDay.ChocolateDayWishes"
+            android:label="Chocolate Day Wishes"></activity>
+        <activity android:name=".ChocolateDay.ChocolatedayPoems"
+            android:label="Chocolate Day Poems"></activity>
+        <activity android:name=".ChocolateDay.ChocolateDayShayari"
+            android:label="Chocolate Day Shayari"></activity>
+        <activity android:name=".ChocolateDay.ChocolateDaySmsAndQuotes"
+            android:label="Chocolate Day Sms"></activity>
+        <activity android:name=".ChocolateDay.ChocolateDayStatus"
+            android:label="Chocolate Day Status"></activity>
+
+
+        <activity android:name=".ChocolateDay.ChocolateWishesDisplay"
+            android:label="Chocolate Day Wishes"></activity>
+        <activity android:name=".ChocolateDay.ChocolatePoemsDisplay"
+            android:label="Chocolate Day Poems"></activity>
+        <activity android:name=".ChocolateDay.ChocolateShayariDisplay"
+            android:label="Chocolate Day Shayari"></activity>
+        <activity android:name=".ChocolateDay.ChocolateSmsDisplay"
+            android:label="Chocolate Day Sms"></activity>
+        <activity android:name=".ChocolateDay.ChocolateStatusDisplay"
+            android:label="Chocolate Day Status"></activity>
+
+        <activity android:name=".TeddyDay.TeddyDayWishes"
+            android:label="Teddy Day Wishes"></activity>
+        <activity android:name=".TeddyDay.TeddyDayStatus"
+            android:label="Teddy Day Status"></activity>
+        <activity android:name=".TeddyDay.TeddyDayShayari"
+            android:label="Teddy Day Shayari"></activity>
+        <activity android:name=".TeddyDay.TeddyDaySmsAndQuotes"
+            android:label="Teddy Day Sms"></activity>
+        <activity android:name=".TeddyDay.TeddyDayPoems"
+            android:label="Teddy Day Poems"></activity>
+
+        <activity android:name=".TeddyDay.TeddyWishesDisplay"
+            android:label="Teddy Day Wishes"></activity>
+        <activity android:name=".TeddyDay.TeddyStatusDisplay"
+            android:label="Teddy Day Status"></activity>
+        <activity android:name=".TeddyDay.TeddyShayariDisplay"
+            android:label="Teddy Day Shayari"></activity>
+        <activity android:name=".TeddyDay.TeddySmsDisplay"
+            android:label="Teddy Day Sms"></activity>
+        <activity android:name=".TeddyDay.TeddyPoemsDisplay"
+            android:label="Teddy Day Poems"></activity>
+
     </application>
 
 </manifest>

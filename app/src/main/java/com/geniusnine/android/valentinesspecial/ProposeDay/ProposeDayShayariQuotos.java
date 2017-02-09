@@ -8,8 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.geniusnine.android.valentinesspecial.ChocolateDay.ViewPagerAdapter;
 import com.geniusnine.android.valentinesspecial.R;
-import com.geniusnine.android.valentinesspecial.ValentineSpecial.ViewPagerAdapter;
 
 /**
  * Created by Dev on 07-02-2017.
@@ -27,66 +27,118 @@ public class ProposeDayShayariQuotos extends AppCompatActivity {
 
 
         List = new String[] {
-                "“I want to marry you because I cannot live without you.”",
+                "As days go by, my feelings get stronger\n" +
+                        "To be in ur arms, I can’t wait any longer\n" +
+                        "Look into my eyes & u will see that it’s true\n" +
+                        "Day & Night my thoughts r for U.\n" +
+                        "Happy Propose Day\n" ,
 
-                "“Let me love you if not for the rest of your life then for the rest of mine.”",
-                "“Meeting you was fate. becoming your friend was a choice,\n" +
-                        "but falling in love with you was beyond my control.”",
-                "“I want everyone to meet you.\n" +
-                        "You’re my favorite person of all time.”",
-                "“Everyone says you only fall in love once, but that’s not true,\n" +
-                        "every time i hear your voice I fall in Love all over again.”",
-                "“The most magical moments are those\n" +
-                        "when you forget yourself in the joy of someone’s presence.”",
-                "No poems no fancy words I just want the world to know that I love you.\n" +
-                        "My princess with all my heart. Happy Propose Day!","Will you be mine on this propose day?",
-                "I promise you no matter what happens\n" +
-                        "I will be there with you always! Happy Propose Day!",
-                "I love you, will you marry me?",
+                "If I reached for your hand, will u hold it ?\n" +
+                        "If I hold out my arms, will u hug me ?\n" +
+                        "If I go for ur lips, will u kiss me ?\n" +
+                        "If I capture ur heart, will u love me ??\n" +
+                        "“Happy Propose Day 2017“\n" ,
 
-                "Koi hain jiska ess dil ko intjaar hain,\n" +
-                        "Khyalo mein bas usi ka khayal hain,\n" +
-                        "Khushyaan main saari us par luta du..\n" +
-                        "Chahat me uski mai khud ko mita du..\n" +
-                        "Kab ayega vo jiska es dil ko intjaar hain.","Aankhe To Pyar Mein Dill Ki Juban Hoti Hai,\n" +
-                "Chahat To Sada Bejuban Hoti Hai,\n" +
-                "Pyar Mein Dard Bhi Mile To Kya Ghabrana,\n" +
-                "Suna Hai Dard Se Chahat Or Jawan Hoti Hai.","Tu Kahe Jo Bhi Woh Karunga Main,\n" +
-                "Tu Udas Na Ho Tere Paas Hun Main,\n" +
-                "Kya Karna Hai Kisi Aur Ka Sang,\n" +
-                "Tere Saath Sanam Din Raat Hun Main.","Bin Aapke Kuchh Bhi Achha Nahi Lagta,\n" +
-                "Kuchh Pal Ki Judai Bhi Sahi Nahi Jaati,\n" +
-                "\n" +
-                "Tum Khud Hi Samajh Lo Gahrayi Pyar Ki,\n" +
-                "Likh Kar Yeh Baat Mujhse Kahi Nahi Jaati.","Yeh Doori Aur Humse Sahi Nahi Jaati,\n" +
-                "Tere Paas Aane Ko Dil Karta Hai,\n" +
-                "\n" +
-                "Bhula Kar Saare Duniya Bhar Ke Ghamon Ko,\n" +
-                "Tere Aagosh Mein So Jaane Ko Dil Karta Hai.","Mohabbat ka koi rang nahi,\n" +
-                "Fir bhi wo rangin hai,\n" +
-                "Pyar ka koyi chehra nahi,\n" +
-                "Phir bhi woh hasin hai.","Tere Aaghosh Mein, Aane Ko Betab Hun Main,\n" +
-                "Jab Chaho, Eh Dost Pukar Lena Hamein,\n" +
-                "Mahsoos Karna Chahta Hu, Teri Dhadkano Ko,\n" +
-                "Aankhon Ke Raste, Dil Mein Utaar Lena Hamein.","Bhale Laakh Kar Lu Koshish Bhi Magar,\n" +
-                "Dil Ki Baat Kahi Na Jaayegi Mujh Se,\n" +
-                "Eh Mere Hamdam Na Hona Juda Kabhi,\n" +
-                "Teri Judaayi Na Sahi Jaayegi Mujhse.","Aakar Aap Ab Jana Nahi,\n" +
-                "Dil Ko Mere Tarsana Nahi,\n" +
-                "Hum De Chuke Hain Dil Aapko,\n" +
-                "Todkar Isko Tadpana Nahi.","In Aankhon Mein Aur Koi Ab Basta Nahi Hai,\n" +
-                "Ek Aapko In Aankhon Mein Basaane Ke Baad,\n" +
-                "Yeh Dil Mera Ab Kahi Aur Lagta Nahi Hai,\n" +
-                "Ik Aap Se Is Dil Ko Lagane Ke Baad.","Aap Humko Aise Mat Dekhiye,\n" +
-                "Kahin Humko Mohabbat Na Ho Jaaye,\n" +
-                "Aap Toh Muskura Kar Chale Jaaoge,\n" +
-                "Is Dil Ko Musibat Na Ho Jaaye.","Woh Itne Hasee Honge Eh Mere Dosto,\n" +
-                "Dil Ko Is Baat Ka Yakee Aata Nahi,\n" +
-                "Ab Toh Unko Paane Ki Chahat Ho Gayi,\n" +
-                "Unke Bina Ab Kuchh Bhata Nahi.","Aapki Pooja Karte Hain Hum,\n" +
-                "Aap Par Hi Bas Marte Hain Hum,\n" +
-                "Humko Aapse Bahut Pyar Hai,\n" +
-                "Aapko Kahne Se Darte Hain Hum."
+                "All I wanted was Someone to care for me,\n" +
+                        "All I wanted was Someone who’d b there for me,\n" +
+                        "All I ever wanted was Someone who’d b true,\n" +
+                        "All I ever wanted was Someone like You,\n" +
+                        "Happy Propose Day my dear\n" ,
+
+                "I never saw so sweet a face\n" +
+                        "As that I stood before.\n" +
+                        "My heart has left its dwelling place\n" +
+                        "And can return no more.\n" +
+                        "Be with me forever.\n" ,
+
+                "Word Have Not Enough Strength\n" +
+                        "To Express My Love Towards\n" +
+                        "You. My Eyes Are Enough To Express\n" +
+                        "It! Happy Propose Day Dear Love of Life.",
+
+                "At This Propose Day …\n" +
+                        "I Am Opening,\n" +
+                        "An Emotional Bank Account,\n" +
+                        "That is Only For You Sweetheart,\n" +
+                        "So .. Deposit Your All Love In It,\n" +
+                        "& You Will Get The Interest Be My Valentine.\n" ,
+
+                "For my part,,\n" +
+                        "I consider that it will be found,\n" +
+                        "Much better by all parties,\n" +
+                        "To leave The past to history,\n" +
+                        "Especially as I propose,\n" +
+                        "To write that history myself.\n" +
+                        "I Love You.",
+                "Love is heat…\n" +
+                        "You are sweet…\n" +
+                        "When two Lips are meet each other.\n" +
+                        "then Love is complete….\n" +
+                        "Happy Propose Day…!",
+
+                "Hello My Sweetest Sweetheart,\n" +
+                        "I Just Want To Say U Something\n" +
+                        "I Had In My Mind Since We Met\n" +
+                        "Will U Marry Me I Will Love\n" +
+                        "U Always, Always And Always.",
+
+                "I wish I was one of your tears,\n" +
+                        "so I could be born in your eye,\n" +
+                        "run down your cheek,\n" +
+                        "and die on your lips.\n" +
+                        "Happy Propose day Lucky…!",
+
+                "Mujhe khamosh raho me tera saath chahiye\n" +
+                        "Tanha hay mera haath tera haath chahiye\n" +
+                        "Junoon-e-ishq ko teri hi sougaat chahiye,\n" +
+                        "Mujhey jeene ke liye teri hi zaat chahiye.",
+
+                " Ham Apne Pyaar Ka Izhaar Isliye Nahi Karte Hain,\n" +
+                        "Kyunki Ham Unki Han Ya Na Se Darte Hain,\n" +
+                        "Agar Unhone Kar Di Han To Ham Khushi Se Mar Jayenge,\n" +
+                        "Aur Agar Unhone Kar Di Na To Ro Ro Ke Mar Jayenge!!!\n" ,
+
+                "Yun To Sapne Bahut Hasi Hote Hai,\n" +
+                        "Par Sapno Se Pyaar Nahi Karte,\n" +
+                        "Chahate To Tumhe Hum Aaj Bhi Hai,\n" +
+                        "Bas Izhar Nahi Karte!!!\n" ,
+
+                "Pyaar Kya Hai Na Poocho Tum Mujhse\n" +
+                        "Kya Batane Se Maan Jaao Ge?\n" +
+                        "Yoon Bataane Se Fayda Bhi Naheen\n" +
+                        "Kar Ke Dekho To Jaan Jaao Ge",
+
+                "Dil Dedo Kisi Ek Ko, Woh Bhi Kisi Nek Ko.\n" +
+                        "Yeh Koi Mandir Ka Parsad Nahi,\n" +
+                        "Jo Baant They Rahe Her Ek Ko.\n" +
+                        "Dil Denge Kissi Ik Ko Woh Bhee Kissi Nek Ko…\n" +
+                        "Jab Tak Girl Freind Nahi Pat Jaati, Propose Kerenge Her Ek Ko..\n" ,
+
+                "Meri Prem Kahani Ka Kya Ajeeb Ending Tha,\n" +
+                        "Meri Prem Kahani Ka Kya Ajeeb Ending Tha…,\n" +
+                        "Maine Propose Kia Sms Se,\n" +
+                        "Kambakth Wo Uski Shadi Thak Pnding Tha\n" +
+                        "Tumko Mila Kya !!!",
+
+                "Jeevan mein ek baar sabhi ne kiya hai pyar,\n" +
+                        "Kuchh ne darr kar kuchh ne josh mein kiya izhaar,\n" +
+                        "Magar bina bole jab do dil keh jaye dil ki baat,\n" +
+                        "Vahi hai nazar ka nazar se saccha ikraar.\n" ,
+
+                "Banker tera saya tera sath nibhaunga, Tu jha " +
+                        "jha jayegi mein wha wha aaunga, Saya to chod " +
+                        "jata hai sath andhere mein lakin mein andhere mein tera ujala ban jaunga\n" ,
+
+
+                "Deewana hun tera, mujhe inkaar nahi,\n" +
+                        "Kaise keh dun ki mujhe tumse pyar nahi,\n" +
+                        "Kuch shararat to teri nazro mein bhi thi,\n" +
+                        "Main akela hi to iska gunehgar nahi…!!\n",
+
+                "Love is a sweet feeling. It changes you from " +
+                        "inside, even from outside. You start loving " +
+                        "everything, wind, flowers, day, night," +
+                        " moon, stars. So be in love forever."
         };
 
 

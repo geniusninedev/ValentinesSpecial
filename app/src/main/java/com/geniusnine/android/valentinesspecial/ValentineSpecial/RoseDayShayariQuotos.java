@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.geniusnine.android.valentinesspecial.ChocolateDay.ViewPagerAdapter;
 import com.geniusnine.android.valentinesspecial.R;
 
 public class RoseDayShayariQuotos extends AppCompatActivity {

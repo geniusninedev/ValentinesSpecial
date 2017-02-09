@@ -9,9 +9,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.geniusnine.android.valentinesspecial.ProposeDay.ProposeDayDressup;
 import com.geniusnine.android.valentinesspecial.ProposeDay.ProposeDayPoem;
 import com.geniusnine.android.valentinesspecial.ProposeDay.ProposeDayShayari;
+import com.geniusnine.android.valentinesspecial.ProposeDay.ProposeDaySmsandQuotes;
 import com.geniusnine.android.valentinesspecial.ProposeDay.ProposeDayStatus;
 import com.geniusnine.android.valentinesspecial.ProposeDay.ProposeDayWishes;
 import com.geniusnine.android.valentinesspecial.R;
@@ -22,7 +22,7 @@ public class ProposeDay extends AppCompatActivity {
     String[] web = {
             "Status",
             "Shayari",
-            "Dress Up",
+            "Sms & Quotes",
             "Poems",
             "Wishes"
 
@@ -59,7 +59,7 @@ public class ProposeDay extends AppCompatActivity {
 
                 if(position== 2)
                 {
-                    startActivity(new Intent(ProposeDay.this,ProposeDayDressup.class));
+                    startActivity(new Intent(ProposeDay.this,ProposeDaySmsandQuotes.class));
                 }
                 if(position== 3)
                 {
